@@ -3,9 +3,19 @@ package fthHW;
 public class Phone {
     private String number;
     private String model;
-    private int weight;
+     int weight;
 
     public Phone (String number,String model,int weight) {
+        this(number,model);
+        this.weight=weight;
+    }
+
+    public Phone (String number,String model) {
+        this.number=number;
+        this.model=model;
+    }
+
+    public Phone () {
 
     }
     public String getNumber() {
