@@ -30,6 +30,11 @@ public class Phone {
     void receiveCall(String name) {
         System.out.println("Звонит "+name);
     }
+
+    void receiveCall(String name,String number) {
+        System.out.println("Звонит "+name+" "+number);
+    }
+
 }
 
 
