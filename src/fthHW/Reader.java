@@ -39,13 +39,14 @@ public class Reader {
     }
 
     void takeBook(String[] arrBook) {
-        System.out.print(fio+" взял книги:");
-        for (int i=0;i<arrBook.length;i++) {
-            System.out.print(arrBook[i]+" ");
+        System.out.print(fio + " взял книги:");
+        for (int i = 0; i < arrBook.length; i++) {
+            System.out.print(arrBook[i] + " ");
         }
-
     }
 
-
-
 }
+
+
+
+
