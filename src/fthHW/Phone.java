@@ -1,13 +1,18 @@
 package fthHW;
 
+import java.util.Arrays;
+
 public class Phone {
     private String number;
     private String model;
-     int weight;
+     private int weight;
+     private String name;
 
-    public Phone (String number,String model,int weight) {
+
+    public Phone (String number,String model,int weight,String name) {
         this(number,model);
         this.weight=weight;
+        this.name=name;
     }
 
     public Phone (String number,String model) {
@@ -33,6 +38,9 @@ public class Phone {
 
     void receiveCall(String name,String number) {
         System.out.println("Звонит "+name+" "+number);
+    }
+    static void sendMessage(String[] telArr) {
+        System.out.println(Arrays.toString(telArr));
     }
 
 }
