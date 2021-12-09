@@ -7,6 +7,11 @@ public class AppLibrary {
         Reader reader3 = new Reader("Кузнец И.Г.","003","История","12.06.1997","+79655476935");
         reader1.takeBook(3);
         reader1.takeBook(new String[]{"Приключения","Словарь","Энциклопедия"});
+        System.out.println();
+        Book book1 = new Book("Война и мир","Толстой Л.В.");
+        Book book2 = new Book("Преступление и наказание","Достоевский М.Ф.");
+        Book book3 = new Book("Ревизор","Гоголь Н.В.");
+        reader1.takeBook(new Book[] {book1,book2,book3});
 
     }
 }

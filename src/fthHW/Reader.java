@@ -44,6 +44,12 @@ public class Reader {
             System.out.print(arrBook[i] + " ");
         }
     }
+    void takeBook(Book[] books) {
+        System.out.print(fio+" взял книги:");
+        for (int i = 0; i < books.length; i++) {
+            System.out.print(books[i].getNameBook()+"; ");
+        }
+    }
 
 }
 
