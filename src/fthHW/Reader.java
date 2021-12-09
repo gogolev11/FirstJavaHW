@@ -45,10 +45,26 @@ public class Reader {
         }
     }
     void takeBook(Book[] books) {
-        System.out.print(fio+" взял книги:");
+        System.out.print(fio + " взял книги:");
         for (int i = 0; i < books.length; i++) {
-            System.out.print(books[i].getNameBook()+"; ");
+            System.out.print(books[i].getNameBook() + "; ");
         }
+    }
+        void returnBook(int countBook) {
+            System.out.println(fio+" взял "+countBook+" книги");
+        }
+
+        void returnBook(String[] arrBook) {
+            System.out.print(fio + " взял книги:");
+            for (int i = 0; i < arrBook.length; i++) {
+                System.out.print(arrBook[i] + " ");
+            }
+        }
+        void returnBook(Book[] books) {
+            System.out.print(fio+" взял книги:");
+            for (int i = 0; i < books.length; i++) {
+                System.out.print(books[i].getNameBook()+"; ");
+            }
     }
 
 }
